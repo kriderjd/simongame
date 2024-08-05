@@ -33,7 +33,7 @@ function nextSequence() {
     //Animate Button Based on Random Color
     $(searchButton).animate({opacity: 0}).animate({opacity: 1});
     //Create Sound Based on Random Color
-    var strGameAudio = "./sounds/" + randomColor + ".mp3";
+    var strGameAudio = randomColor + ".mp3";
     var gameAudio = new Audio(strGameAudio);
     gameAudio.play();
 }
@@ -85,7 +85,7 @@ $(".btn").click(function () {
         //Animate Button
         animatePress(userSelectedColor);
         //Create Sound
-        var strClickSound = "./sounds/" + userSelectedColor + ".mp3";
+        var strClickSound = userSelectedColor + ".mp3";
         var clickSound = new Audio(strClickSound);
         clickSound.play();
 
